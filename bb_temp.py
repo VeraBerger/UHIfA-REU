@@ -105,7 +105,6 @@ for t in range(1000, 300000, 20):
 
     # perform synthetic photometry on the SEDs
     flux_f, flux_n = synth_phot(nuv_intensity, fuv_intensity, nuv_fc_lams, fuv_fc_lams, nuv_fc_trans, fuv_fc_trans)
-    ratioArr.append(flux_f / flux_n)
     
     # convert fluxes to magnitudes
     mag_f = f_to_m(flux_f, lambda_ref_f)
